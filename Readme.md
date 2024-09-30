@@ -69,6 +69,10 @@ You can trigger the Lambda function by sending an HTTP POST request to your API 
 Architecture
 ### Architecture Description
 
+![generating-product-descriptions-with-amazon-bedrock 20cdb1429a699a9d4afd4e8da2f1b77a5e8fc693](https://github.com/user-attachments/assets/95b98353-6ff2-4e1d-95fa-cf95cf776ebc)
+
+
+
 - **Client/Request**: The user sends a request (via API Gateway or manually) to AWS Lambda with a specified `blog_topic`.
 - **Lambda Function**: Upon invocation, the Lambda function sends the prompt to the LLaMA model on AWS Bedrock to generate the blog.
 - **AWS Bedrock**: Bedrock processes the request using the `meta.llama3-70b-instruct-v1:0` model and returns the blog content.
