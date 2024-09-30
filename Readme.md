@@ -49,6 +49,21 @@ Step 3: S3 Bucket Configuration
 Usage
 ### Request
 
+![image](https://github.com/user-attachments/assets/3ef222e1-d8b0-4d1b-83b1-cac5ed80f47d)
+
+![image](https://github.com/user-attachments/assets/761ca929-0b10-45ed-a80d-f2c52ef187f7)
+
+![image](https://github.com/user-attachments/assets/b7e3e939-88fc-48a7-90f0-2c4c867c28bd)
+
+![image](https://github.com/user-attachments/assets/34bab4d7-2187-4202-8c34-36ff2c489e54)
+
+
+
+
+
+
+
+
 You can trigger the Lambda function by sending an HTTP POST request to your API Gateway endpoint (if set up) or invoking the function directly. The request body should be in JSON format:
 
 Architecture
@@ -57,4 +72,4 @@ Architecture
 - **Client/Request**: The user sends a request (via API Gateway or manually) to AWS Lambda with a specified `blog_topic`.
 - **Lambda Function**: Upon invocation, the Lambda function sends the prompt to the LLaMA model on AWS Bedrock to generate the blog.
 - **AWS Bedrock**: Bedrock processes the request using the `meta.llama3-70b-instruct-v1:0` model and returns the blog content.
-- **S3 Bucket**: The Lambda function saves the generated blog as a `.txt` file in an S3 bucket.
+- **S3 Bucket**: The Lambda function saves the generated blog as a `.txt` file in an S3 bucket.
