@@ -73,3 +73,10 @@ Architecture
 - **Lambda Function**: Upon invocation, the Lambda function sends the prompt to the LLaMA model on AWS Bedrock to generate the blog.
 - **AWS Bedrock**: Bedrock processes the request using the `meta.llama3-70b-instruct-v1:0` model and returns the blog content.
 - **S3 Bucket**: The Lambda function saves the generated blog as a `.txt` file in an S3 bucket.
+
+
+
+https://github.com/user-attachments/assets/33b2651c-1fe3-4779-9b13-289792e065cb
+
+
+
